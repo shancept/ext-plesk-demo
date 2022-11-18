@@ -1,0 +1,10 @@
+.idea/
+/node_modules
+/src/plib/vendor
+/src/plib/cache/ProjectServiceContainer.php
+/src/plib/cache/ProjectServiceContainerTest.php
+/src/plib/cache/routes.php
+/src/htdocs/dist/
+/var/
+/.deptrac.cache
+/.php-cs-fixer.cache

@@ -1,0 +1,93 @@
+parameters:
+  paths: ["./src/plib/library"]
+  exclude_files:
+    - '.php$#'
+  layers:
+    - name: Controller
+      collectors:
+        - type: className
+          regex: .*\\Controller\\.*
+    - name: Domain
+      collectors:
+        - type: className
+          regex: .*\\Entity\\.*
+    - name: Http
+      collectors:
+        - type: className
+          regex: .*\\Demo\\Http\\.*
+    - name: Repository
+      collectors:
+        - type: className
+          regex: .*\\Repository\\.*
+    - name: Request
+      collectors:
+        - type: className
+          regex: .*\\Request\\.*
+    - name: Command
+      collectors:
+        - type: className
+          regex: .*\\UseCases\\Command\\.*Command.*
+    - name: CommandHandler
+      collectors:
+        - type: className
+          regex: .*\\UseCases\\Command\\.*Handler.*
+    - name: Query
+      collectors:
+        - type: className
+          regex: .*\\UseCases\\Query\\.*Query.*
+    - name: QueryHandler
+      collectors:
+        - type: className
+          regex: .*\\UseCases\\Query\\.*Handler.*
+    - name: PleskContext
+      collectors:
+        - type: className
+          regex: .*\\Wrapper\\Plesk\\Context\\.*
+    - name: PleskCrypt
+      collectors:
+        - type: className
+          regex: .*\\Wrapper\\Plesk\\Crypt\\.*
+    - name: PleskLocale
+      collectors:
+        - type: className
+          regex: .*\\Wrapper\\Plesk\\Locale\\.*
+    - name: PleskLog
+      collectors:
+        - type: className
+          regex: .*\\Wrapper\\Plesk\\Log\\.*
+    - name: PleskSettings
+      collectors:
+        - type: className
+          regex: .*\\Wrapper\\Plesk\\Settings\\.*
+
+  ruleset:
+    Controller:
+      - Request
+      - CommandHandler
+      - QueryHandler
+      - Http
+      - Command
+    Repository:
+      - PleskSettings
+      - Domain
+    CommandHandler:
+      - Command
+      - Repository
+      - PleskLocale
+      - PleskCrypt
+      - Domain
+    QueryHandler:
+      - Query
+      - Repository
+      - PleskLocale
+      - PleskContext
+    Http:
+      - Controller
+    Domain: ~
+    Request: ~
+    Command: ~
+    Query: ~
+    PleskCrypt: ~
+    PleskLocale: ~
+    PleskLog: ~
+    PleskSettings: ~
