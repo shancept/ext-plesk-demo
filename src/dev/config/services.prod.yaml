@@ -1,0 +1,15 @@
+imports:
+  - { resource: services.yaml }
+  - { resource: routing.yaml }
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+  Psr\Container: '@PleskExt\Demo\DI\Container'
+
+  Psr\Log\LoggerInterface: '@PleskExt\Demo\Wrapper\Plesk\Log\LoggerWrapper'
+
+  PleskExt\Demo\Wrapper\Plesk\Locale\LocaleInterface: '@PleskExt\Demo\Wrapper\Plesk\Locale\LocaleWrapper'
