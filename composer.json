@@ -7,7 +7,6 @@
     "php": ">=8.0.2",
     "ext-ctype": "*",
     "ext-iconv": "*",
-    "shancept/recipes": "dev-main",
     "symfony/flex": "^2"
   },
   "flex-require": {
@@ -74,26 +73,12 @@
   },
   "extra": {
     "symfony": {
+      "endpoint": [
+        "https://api.github.com/repos/shancept/plesk_recipe/contents/index.json",
+        "flex://defaults"
+      ],
       "allow-contrib": false,
-      "require": "6.0.*",
-      "recipes": [
-        {
-          "name": "routing",
-          "version": "1.0.0",
-          "recipe": {
-            "type": "path",
-            "value": "recipes/symfony/routing"
-          }
-        },
-        {
-          "name": "framework-bundle",
-          "version": "1.0.0",
-          "recipe": {
-            "type": "path",
-            "value": "recipes/symfony/framework-bundle"
-          }
-        }
-      ]
+      "require": "6.0.*"
     },
     "bin-dir": "src/plib/bin",
     "config-dir": "src/plib/config",
