@@ -23,6 +23,7 @@
         }
     ],
     "require-dev": {
+        "plesk/pm-api-stubs": "^18.0"
     },
     "autoload": {
         "psr-4": {
@@ -66,9 +67,8 @@
         "symfony/polyfill-php80": "*"
     },
     "scripts": {
-        "setup": "sh run.sh",
         "auto-scripts": {
-            "run-setup": "@composer setup",
+            "sh run.sh": "script",
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd"
         },
