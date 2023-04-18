@@ -51,7 +51,6 @@
             "symfony/runtime": true,
             "shancept/flex": true
         },
-        "optimize-autoloader": true,
         "preferred-install": {
             "*": "dist"
         },
