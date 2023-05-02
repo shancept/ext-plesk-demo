@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <module>
-    <id>demo</id>
-    <name>Demo</name>
-    <description>Plesk demo extension</description>
-    <version>1.0.0</version>
+    <id>{{cookiecutter.extension_id}}</id>
+    <name>{{cookiecutter.extension_name}}</name>
+    <description>{{cookiecutter.extension_description}}</description>
+    <version>0.0.1</version>
     <release>{{RELEASE}}</release>
     <vendor>Plesk</vendor>
     <url>https://www.plesk.com</url>
-    <plesk_min_version>18.0.22</plesk_min_version>
+    <plesk_min_version>18.0.52</plesk_min_version>
 </module>

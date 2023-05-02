@@ -4,3 +4,13 @@
 /var/
 /.deptrac.cache
 /.php-cs-fixer.cache
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/src/plib/config/secrets/prod/prod.decrypt.private.php
+/src/htdocs/bundles/
+/src/plib/var/
+/src/plib/vendor
+###< symfony/framework-bundle ###

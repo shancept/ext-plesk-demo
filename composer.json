@@ -7,14 +7,12 @@
         "php": ">=8.0.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "shancept/flex": "2.x-dev"
-    },
-    "flex-require": {
-        "symfony/console": "*",
-        "symfony/dotenv": "*",
-        "symfony/framework-bundle": "*",
-        "symfony/runtime": "*",
-        "symfony/yaml": "*"
+        "shancept/flex": "2.x-dev",
+        "symfony/console": "6.0.*",
+        "symfony/dotenv": "6.0.*",
+        "symfony/framework-bundle": "6.0.*",
+        "symfony/runtime": "6.0.*",
+        "symfony/yaml": "6.0.*"
     },
     "repositories": [
         {
