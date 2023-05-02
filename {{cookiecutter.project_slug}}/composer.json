@@ -1,6 +1,6 @@
 {
-    "name": "plesk/ext-demo",
-    "description": "Plesk demo extension",
+    "name": "plesk/ext-{{cookiecutter.extension_id}}",
+    "description": "{{cookiecutter.extension_description}}",
     "type": "project",
     "license": "Apache-2.0",
     "require": {
@@ -25,22 +25,16 @@
     },
     "autoload": {
         "psr-4": {
-            "PleskExt\\Demo\\": [
+            "{{cookiecutter.namespace_composer}}\\": [
                 "src/plib/library/",
-                "modules/demo/library/",
-                "src/plib/cache",
-                "modules/demo/cache"
+                "modules/{{cookiecutter.extension_id}}/library/"
             ]
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PleskExt\\Demo\\": [
-                "src/plib/library/",
-                "src/plib/cache"
-            ],
-            "PleskExt\\Demo\\DI\\": "src/dev/DI/",
-            "PleskExt\\Demo\\Test\\": "tests/"
+            "{{cookiecutter.namespace_composer}}\\": ["src/plib/library/"],
+            "{{cookiecutter.namespace_composer}}\\Test\\": "tests/"
         }
     },
     "config": {
@@ -85,12 +79,12 @@
             "require": "6.0.*"
         },
         "bin-dir": "src/plib/bin",
-        "config-dir": "src/plib/config",
+        "config-dir": "../src/plib/config",
         "var-dir": "src/plib/var",
-        "src-dir": "src/plib/library",
+        "src-dir": "../src/plib/library",
         "public-dir": "src/htdocs",
         "runtime": {
-            "dotenv_path": "src/plib/.env"
+            "dotenv_path": "../src/plib/.env"
         }
     }
 }
