@@ -1,7 +1,5 @@
 controllers:
-    resource: ../library/Controller/
-    type: annotation
-
-kernel:
-    resource: ../library/Kernel.php
-    type: annotation
+    resource:
+        path: ../library/Controller/
+        namespace: {{cookiecutter.namespace}}\Controller
+    type: attribute

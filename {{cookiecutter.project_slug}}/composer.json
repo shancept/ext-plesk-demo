@@ -8,11 +8,11 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "shancept/flex": "2.x-dev",
-        "symfony/console": "6.0.*",
-        "symfony/dotenv": "6.0.*",
-        "symfony/framework-bundle": "6.0.*",
-        "symfony/runtime": "6.0.*",
-        "symfony/yaml": "6.0.*"
+        "symfony/console": "6.2.*",
+        "symfony/dotenv": "6.2.*",
+        "symfony/framework-bundle": "6.2.*",
+        "symfony/runtime": "6.2.*",
+        "symfony/yaml": "6.2.*"
     },
     "repositories": [
         {
@@ -21,7 +21,10 @@
         }
     ],
     "require-dev": {
-        "plesk/pm-api-stubs": "^18.0"
+        "plesk/pm-api-stubs": "^18.0",
+        "phpunit/phpunit": "^10",
+        "vimeo/psalm": "^5.10",
+        "friendsofphp/php-cs-fixer": "^3.16"
     },
     "autoload": {
         "psr-4": {
@@ -33,7 +36,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "PleskExt\\{{cookiecutter.extension_id.capitalize()}}\\": ["src/plib/library/"],
+            "PleskExt\\{{cookiecutter.extension_id.capitalize()}}\\": "src/plib/library/",
             "PleskExt\\{{cookiecutter.extension_id.capitalize()}}\\Test\\": "tests/"
         }
     },
@@ -55,7 +58,8 @@
         "symfony/polyfill-php72": "*",
         "symfony/polyfill-php73": "*",
         "symfony/polyfill-php74": "*",
-        "symfony/polyfill-php80": "*"
+        "symfony/polyfill-php80": "*",
+        "symfony/polyfill-php81": "*"
     },
     "scripts": {
         "auto-scripts": {
@@ -76,7 +80,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "6.0.*"
+            "require": "6.2.*"
         },
         "bin-dir": "src/plib/bin",
         "config-dir": "../src/plib/config",
