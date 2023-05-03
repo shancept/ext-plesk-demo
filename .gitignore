@@ -2,5 +2,3 @@
 /node_modules
 /src/htdocs/dist/
 /var/
-/.deptrac.cache
-/.php-cs-fixer.cache
