@@ -1,5 +1,8 @@
 #!/usr/bin/env php
 <?php
+// Copyright 1999-{{ year }}. Plesk International GmbH. All rights reserved.
+
+declare(strict_types=1);
 
 use {{cookiecutter.namespace}}\Kernel;
 use Symfony\Bundle\FrameworkBundle\Console\Application;

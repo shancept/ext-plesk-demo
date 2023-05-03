@@ -1,4 +1,8 @@
 <?php
+// Copyright 1999-{{ year }}. Plesk International GmbH. All rights reserved.
+
+declare(strict_types=1);
+
 \pm_Context::init('{{cookiecutter.extension_id}}');
 
 use {{cookiecutter.namespace}}\Kernel;
