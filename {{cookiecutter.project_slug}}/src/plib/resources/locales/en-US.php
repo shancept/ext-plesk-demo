@@ -1,12 +1,12 @@
 <?php
-// Copyright 1999-{{ year }}. Plesk International GmbH. All rights reserved.
+// Copyright 1999-{{ cookiecutter.year }}. Plesk International GmbH. All rights reserved.
 
 declare(strict_types=1);
 
-return [
+$messages = [
     'app' => [
         'index' => [
-            'title' => {{cookiecutter.extension_name|title|json_encode}},
+            'title' => '{{cookiecutter.extension_name}}',
         ],
     ]
 ];

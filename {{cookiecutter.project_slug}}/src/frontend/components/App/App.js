@@ -1,4 +1,4 @@
-// Copyright 1999-{{ year }}. Plesk International GmbH. All rights reserved.
+// Copyright 1999-{{ cookiecutter.year }}. Plesk International GmbH. All rights reserved.
 
 // noinspection ES6CheckImport,ES6UnusedImports
 
@@ -8,11 +8,7 @@ import AppProvider from './Provider';
 import General from '../../pages/General';
 
 const App = ({ baseUrl }) => (
-    <AppProvider
-        baseUrl={baseUrl}
-        sqliteDb={sqliteDb}
-        engineList={engineList}
-    >
+    <AppProvider baseUrl={baseUrl}>
         <General/>
     </AppProvider>);
 

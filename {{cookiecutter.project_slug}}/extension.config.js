@@ -1,4 +1,4 @@
-// Copyright 1999-{{ year }}. Plesk International GmbH. All rights reserved.
+// Copyright 1999-{{ cookiecutter.year }}. Plesk International GmbH. All rights reserved.
 
 const path = require('path');
 module.exports = {

@@ -1,5 +1,5 @@
 <?php
-// Copyright 1999-{{ year }}. Plesk International GmbH. All rights reserved.
+// Copyright 1999-{{ cookiecutter.year }}. Plesk International GmbH. All rights reserved.
 
 declare(strict_types=1);
 

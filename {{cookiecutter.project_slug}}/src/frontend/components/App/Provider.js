@@ -1,4 +1,4 @@
-// Copyright 1999-{{ year }}. Plesk International GmbH. All rights reserved.
+// Copyright 1999-{{ cookiecutter.year }}. Plesk International GmbH. All rights reserved.
 
 // noinspection ES6CheckImport,ES6UnusedImports
 
@@ -13,7 +13,7 @@ const Provider = (
     }
 ) => (
     // eslint-disable-next-line react/jsx-no-constructed-context-values
-    <Context.Provider value={{baseUrl}}>
+    <Context.Provider value={% raw %}{{baseUrl}}{% endraw %}>
         {children}
     </Context.Provider>
 );

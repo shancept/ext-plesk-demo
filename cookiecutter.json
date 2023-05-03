@@ -1,9 +1,8 @@
 {
     "extension_id": "demo",
-    "extension_name": "Demo extension",
-    "year": "{{now().year}}",
-    "extension_description": "This is a demo extension",
+    "extension_name": "{{ cookiecutter.extension_id.capitalize() }} extension",
+    "year": "{{ cookiecutter.year }}",
+    "extension_description": "This is a {{ cookiecutter.extension_id }} extension",
     "project_slug": "{{ cookiecutter.extension_name.lower().replace(' ', '-').replace('_', '-') }}",
-    "namespace": "PleskExt\\Demo",
-    "namespace_composer": "PleskExt\\\\Demo"
+    "namespace": "PleskExt\\{{ cookiecutter.extension_id.capitalize() }}"
 }
