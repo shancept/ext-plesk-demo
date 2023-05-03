@@ -5,7 +5,6 @@
     <name>{{cookiecutter.extension_name}}</name>
     <description>{{cookiecutter.extension_description}}</description>
     <version>0.0.1</version>
-    <release>{{RELEASE}}</release>
     <vendor>Plesk</vendor>
     <url>https://www.plesk.com</url>
     <plesk_min_version>18.0.52</plesk_min_version>
