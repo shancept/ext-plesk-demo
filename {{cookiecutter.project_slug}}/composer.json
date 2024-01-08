@@ -4,22 +4,16 @@
     "type": "project",
     "license": "Apache-2.0",
     "require": {
-        "php": ">=8.0.2",
+        "php": ">=8.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "shancept/flex": "2.x-dev",
-        "symfony/console": "6.2.*",
-        "symfony/dotenv": "6.2.*",
-        "symfony/framework-bundle": "6.2.*",
-        "symfony/runtime": "6.2.*",
-        "symfony/yaml": "6.2.*"
+        "symfony/flex": "2.x-dev",
+        "symfony/console": "7.0.*",
+        "symfony/dotenv": "7.0.*",
+        "symfony/framework-bundle": "7.0.*",
+        "symfony/runtime": "7.0.*",
+        "symfony/yaml": "7.0.*"
     },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/shancept/flex.git"
-        }
-    ],
     "require-dev": {
         "plesk/pm-api-stubs": "^18.0",
         "phpunit/phpunit": "^10",
@@ -44,7 +38,7 @@
         "allow-plugins": {
             "composer/package-versions-deprecated": true,
             "symfony/runtime": true,
-            "shancept/flex": true
+            "symfony/flex": true
         },
         "preferred-install": {
             "*": "dist"
@@ -80,7 +74,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "6.2.*"
+            "require": "7.0.*"
         },
         "bin-dir": "src/plib/bin",
         "config-dir": "../src/plib/config",
